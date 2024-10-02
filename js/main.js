@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Login logic
-    document.getElementById('login-form')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
+    // Handle video upload and post creation
+    const postForm = document.getElementById('post-form');
+    if (postForm) {
+        postForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const postContent = document.getElementById('post-content').value;
+            const videoUpload = document.getElementById('video-upload').files[0];
 
-        if (username === "admin" && password === "password") {
-            window.location.href = "admin.html";
-        } else {
-            alert("Incorrect credentials!");
-        }
-    });
+            if (videoUpload && videoUpload.size / 1024 / 1024 > 10) {
+                alert("Video must be under 10MB!");
+                return;
+            }
 
-    // Populate profile page
-    const usernameDisplay = document.getElementById('username-display');
-    if (usernameDisplay) {
-        usernameDisplay.textContent = 'User123'; // Replace with actual user data
+            // Logic to handle the video upload and post content (mocked for now)
+            alert("Post submitted successfully with video!");
+        });
     }
 
-    // Admin page logic for moderating posts
-    const adminPostContainer = document.getElementById('admin-post-container');
-    if (adminPostContainer) {
-        adminPostContainer.innerHTML = "<p>No posts to moderate</p>";
+    // Search functionality
+    const searchBtn = document.getElementById('search-btn');
+    if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+            const query = document.getElementById('search-bar').value;
+            // Perform search (mocked for now)
+            alert(`Searching for: ${query}`);
+        });
     }
 });
