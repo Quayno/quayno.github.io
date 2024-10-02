@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscrivez-vous à Quayno et commencez à partager vos idées.">
+    <title>S'inscrire - Quayno</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Quayno</h1>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="help.html">Aide</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <h2>Créez votre compte</h2>
+            <form action="/submit-signup" method="POST">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="cta-button">S'inscrire</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Quayno - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
