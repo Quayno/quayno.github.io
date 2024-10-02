@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quayno</title>
+    <title>Quayno - Connect and Share</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Quayno</h1>
+        <div class="logo">
+            <h1>Quayno</h1>
+            <p>Connect, Share, Explore</p>
+        </div>
         <nav>
-            <a href="login.html">Login</a>
-            <a href="profile.html">Profile</a>
+            <a href="about.html">À propos</a>
+            <a href="community.html">Communauté</a>
+            <a href="trends.html">Tendances</a>
+            <a href="groups.html">Groupes</a>
+            <a href="help.html">Aide</a>
+            <a href="profile.html">Mon Profil</a>
         </nav>
     </header>
 
     <main>
-        <section id="posts">
-            <h2>Latest Tweets</h2>
+        <section class="hero-section">
+            <h2>Rejoignez la communauté Quayno !</h2>
+            <p>Quayno est un espace de partage où chacun peut s'exprimer librement. Explorez, interagissez et connectez-vous avec des gens du monde entier.</p>
+            <a href="create-post.html" class="cta-button">Publiez maintenant</a>
+        </section>
+
+        <section class="features">
+            <h2>Pourquoi Quayno ?</h2>
+            <div class="feature-box">
+                <h3>Exprimez-vous</h3>
+                <p>Partagez vos idées, vidéos et publications avec notre limite d'une minute pour les vidéos.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Connectez-vous</h3>
+                <p>Découvrez et suivez des utilisateurs qui partagent vos centres d'intérêt.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Explorez les tendances</h3>
+                <p>Restez à jour avec les sujets les plus discutés sur Quayno.</p>
+            </div>
+        </section>
+
+        <section class="popular-posts">
+            <h2>Les publications populaires</h2>
             <div id="post-container">
-                <!-- JavaScript will load posts here -->
+                <!-- Les publications populaires seront insérées ici via JavaScript -->
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>© 2024 Quayno - Tous droits réservés. | <a href="help.html">Aide</a> | <a href="about.html">À propos</a></p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
