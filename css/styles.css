@@ -1,121 +1,79 @@
-/* Corps global du site */
+/* Global */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #ECF0F1;
-    color: #34495E;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #2C3E50;
-    padding: 1.5em;
-    color: #ECF0F1;
+    background-color: #333;
+    color: white;
+    padding: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .logo h1 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 0.1em;
-}
-
 header nav a {
-    color: #ECF0F1;
+    color: white;
     margin-left: 1em;
     text-decoration: none;
-    font-size: 1.1em;
 }
 
 header nav a:hover {
-    color: #E74C3C;
+    color: #e74c3c;
 }
 
-header nav .highlight {
-    background-color: #E74C3C;
-    padding: 0.6em 1.2em;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-}
-
-/* Section Héros */
+/* Hero Section */
 .hero-section {
+    background-color: #34495e;
+    color: white;
     text-align: center;
-    padding: 4em 0;
-    background-color: #34495E;
-    color: #ECF0F1;
-}
-
-.hero-section h2 {
-    font-size: 2.8em;
-    margin-bottom: 0.5em;
-}
-
-.hero-section p {
-    font-size: 1.3em;
-    margin-bottom: 1.5em;
+    padding: 2em 0;
 }
 
 .cta-button {
-    background-color: #E74C3C;
+    background-color: #e74c3c;
     color: white;
-    padding: 0.8em 1.5em;
-    font-size: 1.2em;
-    text-decoration: none;
+    padding: 0.5em 1em;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .cta-button:hover {
-    background-color: #C0392B;
+    background-color: #c0392b;
 }
 
-/* Features Section */
-.features {
-    display: flex;
-    justify-content: space-around;
-    padding: 3em 1em;
-}
-
-.feature-box {
-    background-color: white;
-    padding: 1.5em;
-    border-radius: 8px;
-    width: 28%;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.feature-box h3 {
-    color: #E74C3C;
-    margin-bottom: 1em;
-}
-
-/* Popular Posts */
-.popular-posts {
-    background-color: white;
-    padding: 3em;
-    margin-top: 2em;
-}
-
+/* Posts */
 .post-card {
-    background-color: #FFF;
-    padding: 1.2em;
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
     border-radius: 5px;
-    margin-bottom: 1.5em;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-card button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post-card button:hover {
+    background-color: #c0392b;
 }
 
 /* Footer */
 footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 1.5em 0;
-    font-size: 0.9em;
+    padding: 1em;
 }
