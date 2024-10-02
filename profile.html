@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | Quayno</title>
+    <title>Mon Profil - Quayno</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>User Profile</h1>
+        <div class="logo">
+            <h1>Quayno</h1>
+        </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html">Accueil</a>
+            <a href="community.html">Communauté</a>
+            <a href="help.html">Aide</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Welcome, <span id="username-display"></span></h2>
-            <p>Your bio: <span id="user-bio"></span></p>
-            <button id="edit-profile">Edit Profile</button>
+        <section class="profile-section">
+            <h2>Mes Publications</h2>
+            <div id="post-container">
+                <!-- Les posts de l'utilisateur seront chargés ici -->
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>© 2024 Quayno - Tous droits réservés.</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
