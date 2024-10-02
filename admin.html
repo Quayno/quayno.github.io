@@ -3,23 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel | Quayno</title>
+    <title>Admin - Quayno</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Admin Panel</h1>
+        <div class="logo">
+            <h1>Quayno</h1>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="community.html">Communauté</a>
+            <a href="help.html">Aide</a>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Manage Posts</h2>
-            <div id="admin-post-container">
-                <!-- List of posts for moderation -->
+        <section class="admin-section">
+            <h2>Gestion des utilisateurs</h2>
+            <div id="user-container">
+                <!-- Les utilisateurs seront chargés ici -->
             </div>
         </section>
     </main>
 
-    <script src="js/main.js"></script>
+    <footer>
+        <p>© 2024 Quayno - Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
 </body>
 </html>
+
